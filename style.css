@@ -1,0 +1,851 @@
+
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ca407a, #f023d8);
+    color: #b824b0;
+}
+
+
+.banner {
+    background-image: url(images/466749375_476757482191631_1427161163929755200_n.jpg); 
+    width:1440;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    color: rgb(184, 30, 99);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner h1 {
+    font-size: 5em;
+    margin: 0.5;
+    text-shadow: 10px 10px 10px rgba(209, 23, 126, 0.5);
+}
+
+.banner p {
+    font-size: 2em;
+    -webkit-text-fill-color: rgb(250, 250, 250);
+    text-shadow: 5px 5px 5px rgba(224, 14, 112, 0.3);
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff69b4;
+    padding: 20px 40px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ff4591;
+    transform: scale(1.1);
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+    color: #ff69b4;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container img {
+    width: 45%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    line-height: 1.8;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    background-color: #ff69b4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-link:hover {
+    background-color: #ff4591;
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px ;
+    background-color: #ff69b4;
+    color: white;
+    margin-top: 30px;
+}
+
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* สไตล์ Body */
+body {
+    background-color: #fdfdfd; /* สีพื้นหลังอ่อน */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* คอนเทนเนอร์หลัก */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* หัวข้อหลัก */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #e60073;
+    margin-bottom: 10px;
+}
+
+/* คำบรรยาย */
+.description {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* ส่วนโครงหน้า */
+.face-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.face-img {
+    width: 100;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8%;
+    border: 4px solid #ff85a2;
+    margin: 10px 0;
+}
+
+.face-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #444;
+}
+
+/* ตารางทรงผม */
+.hairstyle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hairstyle-box {
+    background-color: #fff5f7;
+    border: 2px solid #ffc0cb;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 15px;
+}
+
+.hairstyle-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.hairstyle-box p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.hairstyle-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* คำแนะนำเพิ่มเติม */
+.recommendation {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.recommendation p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ปุ่มลิงก์ไปหน้าถัดไป */
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6699;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-link:hover {
+    background-color: #e05582;
+}
+
+/* Responsive Design */
+@media (max-width: 1980px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .face-img {
+        width: auto;
+        height: auto;
+    }
+
+    .hairstyle-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}
+/* รีเซ็ตสไตล์พื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ตั้งค่าสำหรับ Body */
+body {
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* คอนเทนเนอร์หลัก */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* หัวข้อหลัก */
+h1 {
+    font-size: 2.5em;
+    color: #e60073;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* ลิงก์สำหรับทรงผม */
+.hairstyle-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.hairstyle-links a {
+    display: block;
+    text-decoration: none;
+    background-color: #ff85a2;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.hairstyle-links a:hover {
+    background-color: #e05582;
+    transform: scale(1.05);
+}
+
+/* ปุ่มลิงก์กลับ */
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6699;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-link:hover {
+    background-color: #e05582;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+
+body {
+    /* รีเซ็ตค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* สไตล์ Body */
+body {
+    background-color: #fdfdfd; /* สีพื้นหลังอ่อน */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* คอนเทนเนอร์หลัก */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* หัวข้อหลัก */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+/* สไตล์สำหรับ Section หุ่น */
+.body-type {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff5f7;
+    border: 2px solid #ffc0cb;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.body-type:hover {
+    transform: scale(1.02);
+}
+
+/* หัวข้อย่อย */
+h2 {
+    font-size: 1.8em;
+    color: #e60073;
+    margin-bottom: 15px;
+}
+
+/* รูปภาพ */
+.body-type img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 5px;
+    border: 3px solid #ff85a2;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.body-type img:hover {
+    transform: scale(1.1);
+}
+
+/* ข้อความอธิบาย */
+.body-type p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+    font-style: italic;
+}
+
+/* ลิงก์กลับไปหน้าแรก */
+.back-link {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6699;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background-color: #e05582;
+}
+
+/* Responsive Design สำหรับมือถือ */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .body-type img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdfdfd;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+.image-grid div {
+    text-align: center;
+}
+
+.image-grid img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.image-grid p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    margin-bottom: 20px;
+}
+
+
+.left-column {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.right-column {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+
+/* รีเซ็ตค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* สไตล์ Body */
+body {
+    background-color: #fff5f5; /* พื้นหลังโทนอ่อน */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* คอนเทนเนอร์หลัก */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* หัวข้อหลัก */
+h1 {
+    text-align: center;
+    color: #d63384;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* หัวข้อรอง */
+h2 {
+    text-align: left;
+    color: #d63384;
+    font-size: 1.5em;
+    margin: 10px 0;
+    border-bottom: 2px solid #ffc0cb;
+    padding-bottom: 5px;
+}
+
+/* ส่วน Grid Layout สำหรับข้อความ */
+.grid-layout {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px 0;
+    gap: 20px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    background: #ffe6ea;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.left-column ul,
+.right-column ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.left-column li,
+.right-column li {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1em;
+}
+
+/* รูปภาพและข้อความใต้รูปภาพ */
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.image-grid div {
+    text-align: center;
+    background-color: #ffe6ea;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.image-grid p {
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* ลิงก์กลับไปหน้าแรก */
+.back-link {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-align: center;
+    background-color: #ff6699;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background-color: #e05582;
+}
+
+/* Responsive Design สำหรับหน้าจอเล็ก */
+@media (max-width: 768px) {
+    .grid-layout {
+        flex-direction: column;
+    }
+
+    .image-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-grid div {
+        width: 100%;
+    }
+}
+
+/* สไตล์พื้นฐาน */
+body {
+    font-family: 'Prompt', sans-serif; /* ฟอนต์ภาษาไทย */
+    background-color: #fdf8f9;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #e75480;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #ff69b4;
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+ul {
+    list-style: none;
+    margin: 10px 0 20px;
+}
+
+ul li {
+    background: #ffe4e9;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.image-grid div {
+    text-align: center;
+}
+
+.image-grid img {
+    width: 100%;
+    max-width: 150px;
+    border: 3px solid #ffb6c1;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.1);
+}
+
+.makeup-link a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.makeup-link a:hover {
+    background: #e75480;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #e75480;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.back-link:hover {
+    background: #ff69b4;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px 0;
+    background: #ffe4e9;
+    color: #333;
+    font-size: 0.9em;
+}
+
